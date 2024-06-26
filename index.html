@@ -1,17 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<main>
-		<figure>
-			<img src="https://picsum.photos/200/300" alt="1">
-			<figcaption>something</figcaption>
-		</figure>
-	</main>
-</body>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 18px;
+      }
+      body {
+        width: 100vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 1rem;
+        font-family: "Josefin Sans", sans-serif;
+        color: #f880a0;    
+
+      }
+       
+h1{
+    margin-top: 1%;
+    color: #db5579; 
+}
+h2{
+    font-size: 1 rem;
+     color: #f880a0; 
+}
+figure, .text-container {
+        margin: 0;
+        text-align: center;
+      }
+      .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        gap: 1rem;
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+       
+        gap: 1rem;
+       
+        max-width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+      figcaption {
+        margin-top: 0.5rem; 
+        text-align: center;
+      }
+      div{
+        text-align: left;
+      }
+      .caption{
+        text-align: justify;
+        align-self: start;
+        width: 55%;  
+      }
+      .caption2{
+        text-align: justify;
+        align-self: flex-end;
+        width: 55%;
+      }
+      footer {
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+        padding: 1rem 0;
+        background-color: #fbf0f0de;
+      }
+      footer a {
+        text-decoration: none;
+        color: #fe4e7d;
+        font-weight: bold;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+      @media (max-width: 768px) {
+        html {
+          font-size: 16px;
+        }
+        h1 {
+          font-size: 1.5rem;
+        }
+        h2 {
+          font-size: 1rem;
+        }
+        .caption, .caption2 {
+          width: 100%;
+        }
+        .row {
+          flex-direction: column;
+        }
+      }
+      @media (max-width: 480px) {
+        html {
+          font-size: 14px;
+        }
+        h1 {
+          font-size: 1.25rem;
+        }
+        h2 {
+          font-size: 0.875rem;
+        }
+        body {
+          padding: 0 0.5rem;
+        }
+        .caption, .caption2 {
+          width: 100%;
+        }
+        .row {
+          flex-direction: column;
+        }
+      }
+    
+    </style>
+  </head>
+  <body>
+    <div>
+        <h1>Excursion June 2024, Leipzig</h1>
+        <h2>Capturing Moments Through the Lens</h2>
+        <p>A beautiful city that now has a special place in my heart, full of interesting places, people, and events. 
+            I only wish I had brought my camera to capture the city more fully. 
+            But here are some pics from my phone gallery that I found interesting. We visited lots of places such as the Museum of Fine Arts, the Gallery of Contemporary Art, a printing house, The Leipziger Baumwollspinnerei, and other exhibitions and activities that I really enjoyed and gained inspiration from.
+
+        </p>
+    </div> 
+
+    <div class="row">
+      <figure>
+        <img src="./img/leipzig.png" alt="image" />
+        
+      </figure>
+      <figure>
+        <img src="./img/passage.png" alt="image" />
+       
+      </figure>
+    
+      <figure>
+        <img src="./img/druckerei.png" alt="image" />
+       
+      </figure>
+    
+   
+   
+      <figure>
+        <img src="./img/splash.png" alt="image" />
+       
+      </figure>
+      <figure>
+        <img src="./img/volya.png" alt="image" />
+       
+      </figure>
+      <figure>
+        <img src="./img/v2.png" alt="image" />
+      </figure>
+      <figure>
+        <img src="./img/spi.png" alt="image" />
+        
+      </figure>
+    
+    </div>
+    
+    
+    <div>
+        <h2>Sketches archive</h2>
+        <p> 
+            Here are my most successful works, in my opinion. 
+            I had so much fun using colored pencils, and I might even say they are my new favorite medium.
+             I focused on colors, perspective, and details.
+
+        </p>
+    </div>
+    <div class="caption">
+         
+            These sketches I made inspired by The Leipziger Baumwollspinnerei.
+            Which once was a vast cotton mill, is now a vibrant cultural center with artist studios, galleries, 
+            and printing rooms. I really liked the concept and think it is great that such a huge territory has 
+            been transformed into a hub for creativity and art.
+            </div>
+   
+   
+    <div class="row">
+        <!-- <figure>
+          <img src="./img/sketch1.png" alt="image" />
+          <figcaption>dfldsfköldsf</figcaption>    
+        </figure> -->
+       
+        <figure>
+          <img src="./img/sketch2.png" alt="image" />
+          <figcaption>"Paint Paint Paint"</figcaption>
+        </figure>
+        <figure>
+            <img src="./img/sketch3.png" alt="image" />
+            <figcaption>"Druck?"</figcaption>
+          </figure>
+          <figure>
+            <img src="./img/sketch1.png" alt="image" />
+            <figcaption>"Beauty of Toxins"</figcaption>
+        </figure>
+          
+    </div>
+
+   
+   
+
+<div class="row">
+       
+    <figure>
+        <img src="./img/sketch5.png" alt="image" />
+        <figcaption>"Random"</figcaption>
+    </figure>
+    <figure>
+        <img src="./img/sketch8.png" alt="image" />
+        <figcaption>"Layers of Perspectives"</figcaption>
+  </figure>
+</div>
+
+<div class="caption2">
+  We visited the Leipzig Academy of Fine Arts (HGB).
+   The first sketch in this row is inspired by that visit.
+    It's a beautiful old building with arches and ladders that caught my eye, and
+     I wanted to capture them in my collection. The same goes for those small, 
+     slightly Gothic ornaments, which are actually stamps
+      I saw at the last Museum of Books and Writing. 
+      Oh, and those red figures?  They're actually part of a fence that caught my eye with their charming fragility, 
+      combined with a hint of Gothic character.
+</div>
+<div class="row">
+  <figure>
+      <img src="./img/sketch7.png" alt="image" />
+      <figcaption>"Lost in the Arches"</figcaption>
+</figure>
+<figure>
+  <img src="./img/sketch10.png" alt="image" />
+  <figcaption>"What Do U Think That Is?"</figcaption>
+</figure>
+<figure>
+  <img src="./img/sketch9.png" alt="image" />
+  <figcaption>"Details"</figcaption>
+</figure>
+</div>
+
+<div class="caption">
+The sketch in the middle refers to a video project titled "Too Heavy to Carry" by Elisabeth Stieglitz and Ronny Aviram. This work is based on the poem "Did You Close the Door Softly?" by Holocaust survivor Ruth Lansley. Writing down those words felt like a reflective task for me because it reminded me of a time when I left my home, unsure if I would ever be able to return. Life seemed to freeze within those walls the moment my family and I closed the door.
+  </div>
+<div class="row">
+       
+    <figure>
+        <img src="./img/sketch12.png" alt="image" />
+        <figcaption>"Private?"</figcaption>
+    </figure>
+    <figure>
+        <img src="./img/sketch11.png" alt="image" />
+        <figcaption>"Did You Close The Door Softly?"</figcaption>
+  </figure>
+  <figure>
+    <img src="./img/sketch13.png" alt="image" />
+    <figcaption>"Träume"</figcaption>
+</figure>
+  
+
+</div>
+<footer>
+  <p>made by <a href="https://www.instagram.com/mokatrrino" target="_blank">mokatrrino <3</a></p>
+</footer>
+  </body>
 </html>
