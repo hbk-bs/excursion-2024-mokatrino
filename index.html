@@ -94,6 +94,43 @@ figure, .text-container {
       footer a:hover {
         text-decoration: underline;
       }
+      @media (max-width: 768px) {
+        html {
+          font-size: 16px;
+        }
+        h1 {
+          font-size: 1.5rem;
+        }
+        h2 {
+          font-size: 1rem;
+        }
+        .caption, .caption2 {
+          width: 100%;
+        }
+        .row {
+          flex-direction: column;
+        }
+      }
+      @media (max-width: 480px) {
+        html {
+          font-size: 14px;
+        }
+        h1 {
+          font-size: 1.25rem;
+        }
+        h2 {
+          font-size: 0.875rem;
+        }
+        body {
+          padding: 0 0.5rem;
+        }
+        .caption, .caption2 {
+          width: 100%;
+        }
+        .row {
+          flex-direction: column;
+        }
+      }
     
     </style>
   </head>
